@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <title>রেজাল্ট দেখুন</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>অনলাইন রেজাল্ট সিস্টেম</h1>
+    <p class="subtitle">আপনার রোল নম্বর লিখে রেজাল্ট দেখুন</p>
+
+    <div class="card">
+      <label for="rollInput">রোল নম্বর</label>
+      <input
+        type="text"
+        id="rollInput"
+        placeholder="যেমন: 768796"
+      />
+      <button id="checkResultBtn">রেজাল্ট দেখুন</button>
+      <p id="errorMsg" class="error"></p>
+    </div>
+
+    <div id="resultBox" class="result-card hidden">
+      <h2>STUDENT এর তথ্য</h2>
+      <p><strong>নাম:</strong> <span id="studentName"></span></p>
+      <p><strong>রোল:</strong> <span id="studentRoll"></span></p>
+      <p><strong>ক্লাস:</strong> <span id="studentClass"></span></p>
+      <p><strong>মার্কস:</strong> <span id="studentMarks"></span></p>
+    </div>
+
+    <footer>
+      <p>© ২০২৫ | Rabby</p>
+    </footer>
+  </div>
+
+  <!-- আগে PapaParse, পরে app.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
